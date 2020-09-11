@@ -1,0 +1,30 @@
+﻿/*Por padrão não vem com 0*/ 
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html,body{
+	height: 100%; 
+}
+
+
+.lista{
+	list-style-position: inside;
+	margin: 0 100px;
+}
+/* > significa diretamente dentro*/
+.lista > li{
+	color: brown;	
+}
+.lista .item3{
+	font-weight: bold;
+}

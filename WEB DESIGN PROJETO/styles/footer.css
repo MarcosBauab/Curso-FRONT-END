@@ -1,0 +1,25 @@
+footer.footer1{
+    background: #A186D3;
+    padding: 30px 0;
+    color: white;
+}
+footer.footer1 p{
+    margin-top: 8px;
+    
+}
+footer.footer1 a{
+    margin-top: 8px;
+    display: block;
+    color: white;
+}
+div.group-icons a{
+    font-size: 15pt;
+    display: inline-block;
+    margin: 8px 10px;
+}
+footer.footer2{
+    padding: 10px 0;
+    background: #6935C8;
+    color: black;
+    text-align: center;
+}

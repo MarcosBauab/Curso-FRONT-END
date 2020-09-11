@@ -1,0 +1,48 @@
+/*.box{
+    width:50%;
+    background: orange;
+}
+Todas que não tenha a classe box
+*:not(.box){
+    background:gray;
+}
+O número 1 do tipo box
+.box:nth-of-type(1){    
+}
+Último do tipo
+.box div:last-of-type{}
+O filho número 1
+.box:nth-child(1){}
+Literalmente após o término
+.box::after{}
+Antes do término
+.box::before{}
+
+A cada dois, começando do primeiro:
+.box div:nth-of-type(2n + 1){}
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    height: 100%;
+    
+}/*
+.caixa{
+    width: 300px;
+    height: 300px;
+    background-color: springgreen;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+Active = clicando em cima
+#box1:active{
+    background-color: grey;
+}
+
+:focus serve para quando clicar em algum elemento input  */

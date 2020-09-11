@@ -1,0 +1,314 @@
+*{
+    --cor-principal : #A186D3;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    
+    height: 100%;
+}
+/*Classes auxiliares*/
+.container{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.w50{
+    width: 50%;
+    float: left;
+}
+.w33{
+    width: 33.3%;
+    float: left;
+}
+.center{text-align: center;}
+.clear{clear: both;}
+/*Classes principais*/
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    background: white;
+    top: 0;
+    padding: 8px 0;
+    z-index: 3;
+}
+.logo{
+    
+    float: left;
+}
+.logo h2{
+    position: relative;
+    top: 4px;
+    font-weight: normal;
+}
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+nav.menu-mobile ul {
+    display: none;
+    width: 100%;
+    background: white;
+    text-align:center ;
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 0;
+}
+nav.menu-mobile li{
+    padding:8px 0 ;
+    border-bottom: 1px solid black;
+}
+nav.menu-mobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+nav.menu-mobile li.selected{
+    background: royalblue;
+}
+
+nav.menu-mobile h2 {
+    cursor: pointer;
+}
+nav.menu-desktop{
+    float: right;
+
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+
+nav.menu-desktop li{
+    padding: 0 10px;
+    display: inline-block;
+}
+
+nav.menu-desktop a{
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+nav.menu-desktop a.selected{
+    font-weight: bold;
+}
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+/*Section main-bg*/
+section.main-bg{
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    margin-top: 10px;
+    background: url(../imgs/2244.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*Parallax*/
+    background-attachment: fixed;
+    text-align: center; 
+}
+section.main-bg > .container{
+    position: relative;
+    z-index: 2;
+}
+.overlay{
+    z-index:1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+}
+section.main-bg h2{
+       
+    color: #A186D3;
+    mix-blend-mode: color-burn;
+    font-size: 60px;
+    font-weight: normal;
+    
+}
+section.main-bg p{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0 50px;
+    text-align: left;
+}
+button.saibamais{
+    cursor: pointer;
+    background: var(--cor-principal);
+    border: 0;
+    padding: 10px;
+    color: white;
+    margin-top: 70px;
+    font-size: 15pt;
+}
+/*Experiência do usuário*/
+section.diferenciais{
+    padding: 20px 0 30px 0;
+    text-align: center;
+}
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: #A186D3;
+    height: 60px;
+}
+.line-text > div{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+
+    height: 6px;
+    width: 80px;
+    background: var(--cor-principal);
+    
+}
+.line-text h2{
+    position: relative;
+    left: 0;
+    top: 10px;
+    font-size: 27px;
+    font-weight: normal;
+}
+/*Box ícones*/
+.icones{
+    margin-top: 30px;
+}
+.box-icone{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+.box-icone h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/*Equipe e sobre*/
+section.equipe-sobre{
+    padding: 30px 0;
+    background: #C4C4C4;
+}
+section.equipe-sobre > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.equipe-container{
+    width: 50%;
+}
+.sobre-container{
+    width: 50%;
+}
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.box-equipe{
+    margin-top: 10px;
+}
+.img-equipe {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.description-equipe{
+    padding: 0 10px;
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+.description-equipe h3{
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+}
+.description-equipe p{
+    color: black;
+    font-weight: lighter;
+}
+button.embaixo{
+    margin-top: 30px;
+}
+/*E-mail*/
+section.inscricao{
+    background-color: var(--cor-principal);
+    width: 100%;
+    padding: 10px 0;
+}
+h2.texto-inscricao{
+    font-weight: 400;
+}
+
+
+.form-inscricao input[type="text"]{
+    display: inline-block;
+    height: 30px;
+    border: 1px solid gray;
+    background-color: #C4C4C4;
+    width: calc(80% - 80px);
+}
+.form-inscricao input[type="submit"]{
+    color: white;
+    display: inline-block;
+    height: 30px;
+    border: 1px solid #6935C8;
+    background-color: #6935C8;
+    cursor: pointer;
+    width:  80px;
+}
+
+
+
+
+@media (max-width:768px){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    footer.footer1{
+        text-align: center;
+    }
+    .w50,.w33{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .box-icone{
+        width: 100%;
+    }
+    .equipe-container{
+        width: 100%;
+    }
+    .sobre-container{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track{
+    
+    border-radius: 8px;
+    background: #ffffff;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-principal);
+    border-radius: 8px; 
+    
+}
+

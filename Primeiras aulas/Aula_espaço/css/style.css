@@ -1,0 +1,50 @@
+﻿/*Por padrão não vem com 0*/ 
+*{
+	/*Faz com que o padding cresça para dentro
+	para não afetar o tamanho da caixa*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html,body{
+	height: 100%; 
+}
+
+.centro{
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	background-color: brown;
+
+	
+	
+}
+.artigo{
+	/*Para ficar em cima*/
+	vertical-align: top;
+
+	width: 250px;
+	/*Para usar esse display
+	precisa usar o margin-right -4*/
+
+	/*Mexe só nos elementos filhos*/
+	box-sizing: border-box;
+
+	/*Faz elas flutuarem*/
+	float: left;
+
+
+	/*border: 20px solid rgba(0, 0, 0, 0);
+	display: inline-block;
+	margin-right: -4px;*/
+}

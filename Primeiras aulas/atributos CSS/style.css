@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+/*APENAS O a COM HREF =*/
+a[href = "https://www.youtube.com/"]{
+    background-color: red;
+}

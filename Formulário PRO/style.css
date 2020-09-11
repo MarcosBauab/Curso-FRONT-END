@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+   height: 100%;
+    
+}
+form{
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+    place-items: center;
+}
+input[type="file"]{
+    display: none;
+}
+/*label{
+    display: inline-block;
+    cursor: cell;
+}*/
+select{
+    /*Estilizar o select do meu jeito*/
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    outline: none;
+
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: violet;
+}
+/*Checkbox checada e o que está embaixo dela, label*/
+input[type="checkbox"]:checked + label{
+    background:greenyellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Form 1*/
+/*header{
+    text-align: center;
+}
+form {
+    width: 96%;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    
+    
+}
+form fieldset{
+    padding: 40px 10px;
+}
+form fieldset legend{
+    text-align: left;
+}
+
+
+form select {
+    width: calc(80% + 20px);
+    padding: 10px;
+    margin-top: 10px;
+
+    border: 1px solid gray;
+}
+
+input[type = "text"]{
+    width: 80%;
+
+    margin: 10px auto;
+
+    padding: 10px;
+
+    transition: 0.5s;
+}
+input[type = "text"]:focus{
+    width: 90%;
+    outline: 1px solid red;
+}
+input:focus, textarea:focus{
+    /*Linha ao redor quando clica
+    outline: none;
+}
+
+form select option[disabled]{
+    color: red;
+}
+/*
+form select option:nth-of-type(3){
+    color: brown;
+}
+
+
+section {
+    display: inline-block;
+    text-align: left;
+}
+section label {
+    
+    margin-left: 10px;
+}
+h2 {
+    margin: 10px auto;
+}
+textarea{
+    border: 1px solid black;
+    padding: 10px;
+    font-family: tahoma;
+    margin-top: 20px;
+    width: 80%;
+    resize: none;
+}
+
+form input[type = "submit"]{
+    margin-top: 20px ;
+    cursor: pointer;
+    width: 20%;
+    height: 30px;
+}*/
