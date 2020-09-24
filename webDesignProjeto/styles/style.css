@@ -9,6 +9,9 @@ body{
     
     height: 100%;
 }
+html{
+    scroll-snap-type: y mandatory;
+}
 /*Classes auxiliares*/
 .container{
     max-width: 1100px;
@@ -25,13 +28,20 @@ body{
 }
 .center{text-align: center;}
 .clear{clear: both;}
+/*Alinhamento automático*/
+section{
+    scroll-snap-align: center;
+}
+footer{
+    scroll-snap-align: center;
+}
 /*Classes principais*/
 header{
     position: -webkit-sticky;
     position: sticky;
     background: white;
     top: 0;
-    padding: 8px 0;
+    padding: 10px 0;
     z-index: 3;
 }
 .logo{
@@ -54,8 +64,9 @@ nav.menu-mobile ul {
     text-align:center ;
     position: absolute;
     z-index: 3;
-    top: 50px;
+    top: 46px;
     left: 0;
+    text-transform: uppercase;
 }
 nav.menu-mobile li{
     padding:8px 0 ;
@@ -73,6 +84,8 @@ nav.menu-mobile li.selected{
 nav.menu-mobile h2 {
     cursor: pointer;
 }
+
+
 nav.menu-desktop{
     float: right;
 
@@ -105,7 +118,6 @@ section.main-bg{
     position: relative;
     width: 100%;
     padding: 100px 0;
-    margin-top: 10px;
     background: url(../imgs/2244.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,8 +278,41 @@ h2.texto-inscricao{
     cursor: pointer;
     width:  80px;
 }
+/*Sobre*/
+section.title-page{
+    padding: 30px;
+    min-height: 100px;
+    width: 100%;
+    background-image: url(../imgs/2244.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section.title-page > .container{
+    position: relative;
+    z-index: 2;
+}
+section.title-page h2{
+    color: var(--cor-principal);
+    font-size: 20pt;
+    mix-blend-mode: color-burn;
 
-
+}
+section.title-page p{
+    color: white;
+    font-size: 15pt;
+    font-weight: lighter;
+}
+.overlay__title-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 
 @media (max-width:768px){
@@ -277,6 +322,7 @@ h2.texto-inscricao{
     nav.menu-mobile{
         display: block;
     }
+
     footer.footer1{
         text-align: center;
     }
