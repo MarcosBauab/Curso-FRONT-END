@@ -10,7 +10,7 @@ body{
     height: 100%;
 }
 html{
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 /*Classes auxiliares*/
 .container{
