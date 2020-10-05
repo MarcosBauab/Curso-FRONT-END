@@ -53,6 +53,10 @@ header{
     top: 4px;
     font-weight: normal;
 }
+.logo a{
+    text-decoration: none;
+    color: black;
+}
 nav.menu-mobile{
     display: none;
     float: right;
@@ -313,7 +317,45 @@ section.title-page p{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
+/*Sobre notícia*/
+section.central{
+    padding: 30px 0;
+}
+.sobre__noticia img{
+    max-width: 100%;
+    float: left;
+    width: 50%;
+}
+.sobre__noticia p{
+    font-size: 15px;
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+.sobre__noticia p:nth-of-type(3){
+    width: 100%;
+    padding-left: 0;
+}
+/*Parallax*/
+section.parallax{
+    width: 100%;
+    padding: 20px 0;
+    background-image: url(../imgs/pirata.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+section.parallax h2{
+    display: inline-block;
+    padding: 5px;
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+}
+section.parallax p{
+    padding: 10px 0;
+    color: white;
+}
 
 @media (max-width:768px){
     nav.menu-desktop{
@@ -340,7 +382,21 @@ section.title-page p{
         width: 100%;
         margin-top: 20px;
     }
+    .sobre__noticia img{
+      
+        width: 100%;
+    }
+    .sobre__noticia p{
+     
+        width: 100%;
+    }
+    .sobre__noticia p:nth-of-type(3){
+        width: 100%;
+        padding-left: 20px;
+    }
 }
+
+
 /*Scrollbar*/
 ::-webkit-scrollbar{
     width: 10px;
