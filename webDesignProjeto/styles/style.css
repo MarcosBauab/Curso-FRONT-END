@@ -5,13 +5,10 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-body{
-    
+body{  
     height: 100%;
 }
-html{
-    scroll-snap-type: y proximity;
-}
+
 /*Classes auxiliares*/
 .container{
     max-width: 1100px;
@@ -29,12 +26,7 @@ html{
 .center{text-align: center;}
 .clear{clear: both;}
 /*Alinhamento automático*/
-section{
-    scroll-snap-align: center;
-}
-footer{
-    scroll-snap-align: center;
-}
+
 /*Classes principais*/
 header{
     position: -webkit-sticky;
@@ -350,13 +342,59 @@ section.parallax h2{
     display: inline-block;
     padding: 5px;
     color: var(--cor-principal);
-    border: 1px solid var(--cor-principal);
+    border: 5px solid var(--cor-principal);
 }
 section.parallax p{
     padding: 10px 0;
     color: white;
 }
+/*Seção equipe Sobre*/
+section.equipe {
+    padding: 40px 0;
+}
+.circulos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.pessoal{
+    width: 33.3%;
+}
+.avatar{
+    border-radius: 50%;
+    width: 50%;
+    padding-top: 50%;
+    margin: 10px auto;
+    margin-top: 5px;
+    background-image: url(../imgs/equipe.PNG);
+    background-size: 100% 100%;
+}
+/*Seção final*/
+section.final{
+    padding: 20px 0;
+    background-color: rgb(158, 158, 158);
+    border-top: 2px solid grey;
+}
+section.final p{
+    color: white;
+    font-size: 20px;
+}
+.card-text{
+    position: relative;
+    width: 80%;
+    margin-top: 10px;
+}
+.card-text img{
+    max-width: 100%;
 
+
+}
+.card-text h2{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+}
 @media (max-width:768px){
     nav.menu-desktop{
         display: none;
@@ -393,6 +431,12 @@ section.parallax p{
     .sobre__noticia p:nth-of-type(3){
         width: 100%;
         padding-left: 20px;
+    }
+    .pessoal{
+        width: 100%;
+    }
+    .card-text{
+        width: 100%;
     }
 }
 
