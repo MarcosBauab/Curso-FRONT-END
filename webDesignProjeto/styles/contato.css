@@ -1,0 +1,86 @@
+section.contato{
+    padding: 30px 0;
+}
+.divisao{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.divisao .formulario{
+    width: 60%;
+}
+.divisao .formulario h2{
+    background-color: #ccc;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 15px;
+    border-left: 3px solid gray;
+    color: white;
+}
+.divisao .numeros{
+    width: 40%;
+}
+.formulario form{
+    margin-top: 10px;
+}
+.formulario form .w100 input[type=text], .formulario form .w100 textarea{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 5px;
+}
+.formulario form .w100 textarea{
+    resize: vertical;
+    padding: 5px;
+}
+
+
+.metade{
+    display: flex;
+    justify-content: space-between;
+}
+.metade input[type=text]{
+    width: 48%;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 5px;
+}
+
+/*Equipe*/
+.numeros{
+    padding-left: 80px;
+}
+.numeros h2{
+    text-align: left;
+}
+.numeros p{
+    width: 100%;
+    
+    text-align: left;
+    margin-top: 5px;
+}
+p.number{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px){
+    .divisao .formulario{
+        width: 100%;
+    }
+    .divisao .numeros{
+        width: 100%;
+    }
+    .numeros{
+        padding-left: 0;
+    }
+}
