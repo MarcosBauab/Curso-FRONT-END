@@ -160,7 +160,6 @@ form input[type=submit]:hover{
     box-shadow: 0 0 5px var(--roxo-principal),
                 0 0 25px var(--roxo-principal),
                 0 0 50px var(--roxo-principal);
-    border-bottom: 5px solid rgba(129, 59, 194, 0.589);
 }
 /*Seta scroll animada*/
 .right{
@@ -222,7 +221,13 @@ form input[type=submit]:hover{
         width: 100%;
     }
     .w33 p{
-        padding: 10px 100px;
+        padding: 10px 0;
+    }
+    section.meio{
+        padding: 20px;
+    }
+    .textoMeio p{
+        width: 100%;
     }
     .textos-banner{
         margin-top: 20px;
